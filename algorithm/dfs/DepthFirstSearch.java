@@ -1,4 +1,15 @@
 public class DepthFirstSearch{
+    /**
+     * 深度优先算法框架
+     * dfs(当前状态)
+     * if(当前状态是目标状态) then
+     *  dosomething
+     * else
+     *  for(每个新状态)
+     *  if(新状态合法)
+     *  dfs(新状态)
+     * end
+     */
 
     //存数字的数组
     public int NUM[];
