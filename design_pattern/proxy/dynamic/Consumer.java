@@ -8,6 +8,7 @@ public class Consumer{
         InvocationHandler iHandler = new Store(wine);
         License lcs = (License)Proxy.newProxyInstance(wine.getClass().getClassLoader(), wine.getClass().getInterfaces(), iHandler);
         lcs.sell();
+        
         //动态代理，新增一个商品的时候，不用重新写个代理类
         System.out.println();
 
