@@ -4,7 +4,7 @@ public class MyFairLock {
     /**
      *     true 表示 ReentrantLock 的公平锁
      */
-    private  ReentrantLock lock = new ReentrantLock(true);
+    private  ReentrantLock lock = new ReentrantLock(false);
 
     public   void testFail(){
         try {
