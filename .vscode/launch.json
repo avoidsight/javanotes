@@ -2,6 +2,24 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - QuickSort",
+            "request": "launch",
+            "mainClass": "QuickSort"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - DepthFirstSearch",
+            "request": "launch",
+            "mainClass": "DepthFirstSearch"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Task3",
+            "request": "launch",
+            "mainClass": "Task3"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Task2",
             "request": "launch",
             "mainClass": "Task2"
