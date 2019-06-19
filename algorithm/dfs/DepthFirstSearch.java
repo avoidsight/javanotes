@@ -1,3 +1,5 @@
+import java.util.Date;
+
 public class DepthFirstSearch{
     /**
      * 深度优先算法框架
@@ -31,7 +33,7 @@ public class DepthFirstSearch{
 
     public void dfs(int curbox){
         //当前箱子在第9个箱子(超出了,箱子的下标从0开始),开始判断数的组合的正确性,这里使用&更快一点
-        if(curbox == SIZE & 100*NUM[0]+10*NUM[1]+NUM[2]+100*NUM[3]+10*NUM[4]+NUM[5] == 100*NUM[6]+10*NUM[7]+NUM[8]){
+        if(curbox == SIZE && 100*NUM[0]+10*NUM[1]+NUM[2]+100*NUM[3]+10*NUM[4]+NUM[5] == 100*NUM[6]+10*NUM[7]+NUM[8]){
             System.out.println(COUNT+++":"+(100*NUM[0]+10*NUM[1]+NUM[2])+"+"+(100*NUM[3]+10*NUM[4]+NUM[5])+"="+(100*NUM[6]+10*NUM[7]+NUM[8]));
         }
         while(curbox < SIZE){
@@ -50,7 +52,13 @@ public class DepthFirstSearch{
         }
     }
     public static void main(String[] args) {
-       DepthFirstSearch dfs = new DepthFirstSearch(new int[]{-1,-1,-1,-1,-1,-1,-1,-1,-1});
-       dfs.dfs(0);
+        Long startTime = System.currentTimeMillis();
+        DepthFirstSearch dfs = new DepthFirstSearch(new int[]{-1,-1,-1,-1,-1,-1,-1,-1,-1});
+        dfs.dfs(0);
+        long endTime = System.currentTimeMillis();
+        System.out.println("开始时间："+startTime);
+        System.out.println("结束时间："+endTime);
+        System.out.println((float)(endTime-startTime)/1000);
+
     }
 }
