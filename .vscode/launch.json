@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - AdapterTest",
+            "request": "launch",
+            "mainClass": "AdapterTest"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - NewThread",
             "request": "launch",
             "mainClass": "NewThread"
