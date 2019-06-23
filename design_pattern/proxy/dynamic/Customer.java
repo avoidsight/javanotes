@@ -1,7 +1,7 @@
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Proxy;
 
-public class Consumer{
+public class Customer{
 
     public static void main(String[] args) {
         Wine wine = new Wine("二锅头");

@@ -2,6 +2,30 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - ProducerConsumer",
+            "request": "launch",
+            "mainClass": "ProducerConsumer"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ProducerAndConsumer",
+            "request": "launch",
+            "mainClass": "ProducerAndConsumer"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - CPTest",
+            "request": "launch",
+            "mainClass": "CPTest"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Test",
+            "request": "launch",
+            "mainClass": "Test"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - AdapterTest",
             "request": "launch",
             "mainClass": "AdapterTest"
@@ -35,24 +59,6 @@
             "name": "CodeLens (Launch) - Task2",
             "request": "launch",
             "mainClass": "Task2"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - SomeErrorTest",
-            "request": "launch",
-            "mainClass": "SomeErrorTest"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Consumer",
-            "request": "launch",
-            "mainClass": "Consumer"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Customer",
-            "request": "launch",
-            "mainClass": "Customer"
         }
     ]
 }
