@@ -27,8 +27,8 @@ public class Task3{
             }
             System.out.println();
             // box.removeAll(box);
-            box = null;
-            box = new ArrayList<>();
+            // box = null;
+            // box = new ArrayList<>();
         }
         while(current<chr.length){
         for(int i = 0;i<chr.length;i++){
@@ -38,19 +38,23 @@ public class Task3{
                 book[i] =1;
                 dfs(chr, current+1);
                 book[i] =0;
+                //这一步非常重要，因为之前我在输出box的时候把box清空了（line31），导致输出的cbb这种
+                //一步清一次，一次清除会把还需要存留的也删除
+                box.remove(Character.valueOf(chr[i]));
             }
         }
         return;
     }
     }
+
     public static void init(int size){
         book = new int[size];
-        Queue
         box = new ArrayList<Character>();
         for (int i = 0; i < size; i++) {
             book[i] = 0;//0表示第i位字符没有使用过，1表示使用过，不能用了
         }
     }
+    
     public static void main(String[] args) {
         String str = "1234";
         print(str);
