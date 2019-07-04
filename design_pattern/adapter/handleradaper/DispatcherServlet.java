@@ -25,6 +25,7 @@ public class DispatcherServlet{
         }
         return null;
     }
+   
     public static void main(String[] args) {
         DispatcherServlet dispatcherServlet = new DispatcherServlet();
         Controller c = new SimpleController();
