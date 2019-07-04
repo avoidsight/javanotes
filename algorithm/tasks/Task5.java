@@ -86,6 +86,6 @@ public class Task5{
     }
 
     public static void main(String[] args) {
-        System.out.println(multiply("0","0"));
+        System.out.println(multiply("1234","1234"));
     }
 }

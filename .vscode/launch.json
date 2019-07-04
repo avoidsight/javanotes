@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - DispatcherServlet",
+            "request": "launch",
+            "mainClass": "DispatcherServlet"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - ThreadCount",
             "request": "launch",
             "mainClass": "ThreadCount"
