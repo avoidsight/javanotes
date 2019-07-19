@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - SomeErrorTest",
+            "request": "launch",
+            "mainClass": "SomeErrorTest"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - DispatcherServlet",
             "request": "launch",
             "mainClass": "DispatcherServlet"
