@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - ConcurrencyTest",
+            "request": "launch",
+            "mainClass": "java.concurrent.art_of_concurrent.charpter1.ConcurrencyTest",
+            "projectName": "javanotes_fdea9aee"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - SomeErrorTest",
             "request": "launch",
             "mainClass": "SomeErrorTest"
