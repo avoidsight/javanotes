@@ -13,18 +13,17 @@ public class Solution209 {
      * @return
      */
     public int minSubArrayLen(int s, int[] nums) {
-        int res = 0;
-        int sum =0;
-        int j = 0;
+        if(nums==null || nums.length ==0) return 0;
+        int res = Integer.MAX_VALUE, sum =0, j = 0;
         for(int i =0; i<nums.length; i++){
             sum = sum+nums[i];
             while(sum>=s){
-                res = res==0? i-j+1:Math.min(res,i-j+1);
+                res = Math.min(res,i-j+1);
                 sum -= nums[j++];
 
             }
         }
-        return res;
+        return res==Integer.MAX_VALUE? 0:res;
     }
 
     public static void main(String[] args) {
