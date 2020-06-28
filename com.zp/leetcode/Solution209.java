@@ -6,6 +6,12 @@ package com.zp.leetcode;
  * @date 2020-06-28 12:38
  */
 public class Solution209 {
+    /**
+     * 滑动窗口 双指针实现
+     * @param s
+     * @param nums
+     * @return
+     */
     public int minSubArrayLen(int s, int[] nums) {
         int res = 0;
         int sum =0;
