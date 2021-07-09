@@ -10,15 +10,15 @@ import java.util.Arrays;
 public class Solution378 {
     public int kthSmallest(int[][] matrix, int k) {
         int len = matrix.length;
-        int left = matrix[0][0],right = matrix[len-1][len-1],sum = len*len,mid = (left+right)/2;
-        while(left <right){
-            sum = sum(matrix,mid);
-            if(sum>=k){
+        int left = matrix[0][0], right = matrix[len - 1][len - 1], sum = len * len, mid = (left + right) / 2;
+        while (left < right) {
+            sum = sum(matrix, mid);
+            if (sum >= k) {
                 right = mid;
-                mid = (left+right)/2;
-            }else{
-                left = mid+1;
-                mid = (left+right)/2;
+                mid = (left + right) / 2;
+            } else {
+                left = mid + 1;
+                mid = (left + right) / 2;
             }
         }
         return left;
@@ -42,7 +42,7 @@ public class Solution378 {
 
     public static void main(String[] args) {
         Solution378 solution378 = new Solution378();
-        int[][] res = new int[][]{{1,3,5},{6,7,12},{11,14,14}};
-        System.out.println(solution378.kthSmallest(res,4));
+        int[][] res = new int[][]{{1, 3, 5}, {6, 7, 12}, {11, 14, 14}};
+        System.out.println(solution378.kthSmallest(res, 4));
     }
 }

@@ -20,17 +20,17 @@ class Solution {
         return res;
     }
 
-    public void iterate(int[] nums){
-        if(list.size()==3 ){
-            if(list.get(0)+list.get(1)+list.get(2) == 0){
+    public void iterate(int[] nums) {
+        if (list.size() == 3) {
+            if (list.get(0) + list.get(1) + list.get(2) == 0) {
                 List<Integer> list1 = new ArrayList<>();
                 list1.addAll(list);
                 res.add(list1);
             }
         }
-        while (list.size()<3){
-            for(int i = 0;i<nums.length;i++){
-                if(flag[i] != 0) {
+        while (list.size() < 3) {
+            for (int i = 0; i < nums.length; i++) {
+                if (flag[i] != 0) {
                     continue;
                 }
                 flag[i] = 1;
@@ -40,7 +40,7 @@ class Solution {
             }
             return;
         }
-        list.remove(list.size()-1);
+        list.remove(list.size() - 1);
 
     }
 

@@ -1,7 +1,7 @@
-public class HelloWorldServlet extends MyServlet{
+public class HelloWorldServlet extends MyServlet {
 
     @Override
-    public void doGet(MyRequest myRequest,MyRespond myRespond){
+    public void doGet(MyRequest myRequest, MyRespond myRespond) {
         try {
             myRespond.write("get world...");
         } catch (Exception e) {
@@ -10,7 +10,7 @@ public class HelloWorldServlet extends MyServlet{
     }
 
     @Override
-    public void doPost(MyRequest myRequest,MyRespond myRespond){
+    public void doPost(MyRequest myRequest, MyRespond myRespond) {
         try {
             myRespond.write("post world...");
         } catch (Exception e) {

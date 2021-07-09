@@ -7,14 +7,14 @@ package com.zp.leetcode;
  */
 public class Solution509 {
     public int fib(int N) {
-        if(N == 0) return 0;
-        if(N == 1) return 1;
+        if (N == 0) return 0;
+        if (N == 1) return 1;
         int dp[] = new int[3];
         dp[0] = 0;
         dp[1] = 1;
-        for(int i=2; i<=N; i++){
+        for (int i = 2; i <= N; i++) {
             dp[2] = dp[0] + dp[1];
-            if(dp[2] >= 1000000007){
+            if (dp[2] >= 1000000007) {
                 dp[2] = dp[2] % 1000000007;
             }
             dp[0] = dp[1];

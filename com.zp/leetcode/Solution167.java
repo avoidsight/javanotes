@@ -9,14 +9,14 @@ import java.util.Arrays;
  */
 public class Solution167 {
     public int[] twoSum(int[] numbers, int target) {
-        int[] res = new int[]{0,numbers.length-1};
+        int[] res = new int[]{0, numbers.length - 1};
         int sum;
-        while(res[0]<res[1]){
-            sum = numbers[res[0]]+numbers[res[1]];
-            if(sum == target) return new int[]{res[0]+1,res[1]+1};
-            if(sum > target){
+        while (res[0] < res[1]) {
+            sum = numbers[res[0]] + numbers[res[1]];
+            if (sum == target) return new int[]{res[0] + 1, res[1] + 1};
+            if (sum > target) {
                 res[1]--;
-            }else{
+            } else {
                 res[0]++;
             }
         }

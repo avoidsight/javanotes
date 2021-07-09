@@ -3,7 +3,7 @@ package thread.producer_consumer;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingDeque;
 
-public class CPTest{
+public class CPTest {
 
     public static void main(String[] args) {
         BlockingQueue blockingQueue = new LinkedBlockingDeque<>();

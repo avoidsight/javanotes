@@ -9,9 +9,9 @@ public class Solution27 {
     public static int removeElement(int[] nums, int val) {
         int res = 0;
         int i = 0;
-        int j =i;
-        while(i<nums.length){
-            if(nums[i]!=val){
+        int j = i;
+        while (i < nums.length) {
+            if (nums[i] != val) {
                 nums[j] = nums[i];
                 res++;
                 j++;
@@ -27,8 +27,8 @@ public class Solution27 {
 //        System.out.println(a.toString());
         int i = 0xDF;
         int j = 0x20;
-        char a ;
-        while((int)(a='a')>3){
+        char a;
+        while ((int) (a = 'a') > 3) {
             System.out.println('x');
             break;
         }
@@ -46,7 +46,7 @@ public class Solution27 {
     }
 
     public static boolean isNumOrChar(int index) {
-        if (index<58 && index>47 || index<91 && index >64 || index < 123 && index > 96){
+        if (index < 58 && index > 47 || index < 91 && index > 64 || index < 123 && index > 96) {
             return true;
         }
         return false;

@@ -7,7 +7,7 @@ package com.zp.spring.controller;
  */
 public class MyService {
 
-    public void sayHello(){
+    public void sayHello() {
         System.out.println("Hello");
     }
 }

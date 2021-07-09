@@ -1,7 +1,7 @@
 package adapter.handleradaper;
 
-public class AnnotationController implements Controller{
-    public void doAnnotationHandler(){
+public class AnnotationController implements Controller {
+    public void doAnnotationHandler() {
         System.out.println("do annotation...");
     }
 }

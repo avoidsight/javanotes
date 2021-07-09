@@ -8,22 +8,23 @@ package com.zp.leetcode;
 public class Solution209 {
     /**
      * 滑动窗口 双指针实现
+     *
      * @param s
      * @param nums
      * @return
      */
     public int minSubArrayLen(int s, int[] nums) {
-        if(nums==null || nums.length ==0) return 0;
-        int res = Integer.MAX_VALUE, sum =0, j = 0;
-        for(int i =0; i<nums.length; i++){
-            sum = sum+nums[i];
-            while(sum>=s){
-                res = Math.min(res,i-j+1);
+        if (nums == null || nums.length == 0) return 0;
+        int res = Integer.MAX_VALUE, sum = 0, j = 0;
+        for (int i = 0; i < nums.length; i++) {
+            sum = sum + nums[i];
+            while (sum >= s) {
+                res = Math.min(res, i - j + 1);
                 sum -= nums[j++];
 
             }
         }
-        return res==Integer.MAX_VALUE? 0:res;
+        return res == Integer.MAX_VALUE ? 0 : res;
     }
 
     public static void main(String[] args) {

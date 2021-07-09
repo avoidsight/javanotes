@@ -1,6 +1,6 @@
 package linkedlist;
 
-public class LinkedListTest{
+public class LinkedListTest {
     public static void main(String[] args) {
         SingleLinkedlist1 linkedlist = new SingleLinkedlist1();
         linkedlist.addHead("D");
@@ -13,7 +13,7 @@ public class LinkedListTest{
         linkedlist.display();
         linkedlist.delete("C");
         linkedlist.display();
-        while(!linkedlist.isEmpty()){
+        while (!linkedlist.isEmpty()) {
             linkedlist.deleteHead();
         }
         linkedlist.display();

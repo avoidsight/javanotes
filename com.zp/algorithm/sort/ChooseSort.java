@@ -6,12 +6,12 @@ package com.zp.algorithm.sort;
  * @date 2020-05-31 14:34
  */
 public class ChooseSort {
-    public static void sort(int a[]){
+    public static void sort(int a[]) {
         for (int i = 0; i < a.length; i++) {
             int temp = a[i];
             int minIndex = i;
             for (int j = i; j < a.length; j++) {
-                if (a[j] < a[minIndex]){
+                if (a[j] < a[minIndex]) {
                     minIndex = j;
                 }
             }
@@ -21,7 +21,7 @@ public class ChooseSort {
     }
 
     public static void main(String[] args) {
-        int arr[] = {1,4,2,8,9,5,7,6};
+        int arr[] = {1, 4, 2, 8, 9, 5, 7, 6};
         sort(arr);
         for (int i : arr) {
             System.out.println(i);

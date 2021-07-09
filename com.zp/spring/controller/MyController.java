@@ -1,4 +1,5 @@
 package com.zp.spring.controller;
+
 import com.zp.spring.annotation.AutoWired;
 
 /**
@@ -11,7 +12,7 @@ public class MyController {
     @AutoWired
     private MyService myService;
 
-    public void getService(){
+    public void getService() {
         myService.sayHello();
     }
 }

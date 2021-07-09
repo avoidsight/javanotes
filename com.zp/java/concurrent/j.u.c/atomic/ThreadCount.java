@@ -1,11 +1,12 @@
 package concurrent.j.u.c.atomic;
 
-public class ThreadCount{
+public class ThreadCount {
     public static int count = 0;
+
     public static void main(String[] args) {
-        for(int i = 0;i <2;i++){
-            new Thread(new Runnable(){
-            
+        for (int i = 0; i < 2; i++) {
+            new Thread(new Runnable() {
+
                 @Override
                 public void run() {
                     try {
@@ -13,7 +14,7 @@ public class ThreadCount{
                     } catch (Exception e) {
                         //TODO: handle exception
                     }
-                    for(int i = 0;i<100;i++){
+                    for (int i = 0; i < 100; i++) {
                         count++;
                     }
                 }

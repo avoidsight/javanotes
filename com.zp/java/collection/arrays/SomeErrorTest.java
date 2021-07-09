@@ -5,25 +5,25 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 
-public class SomeErrorTest{
+public class SomeErrorTest {
     public static void main(String[] args) {
         //误区1
-        int arr[] = {1,2,3};
+        int arr[] = {1, 2, 3};
         List list = Arrays.asList(arr);
         System.out.println(Arrays.toString(arr));
         System.out.println(list.toString());
         System.out.println(list.size());
 
         //误区2
-        String arr1[] = {"我们","都爱","java"};
+        String arr1[] = {"我们", "都爱", "java"};
         List list1 = Arrays.asList(arr1);
         arr1[1] = "是";
-        list1.set(2,"猪");
+        list1.set(2, "猪");
         System.out.println(Arrays.toString(arr1));
         System.out.println(list1.toString());
 
         //误区3
-        String arr2[] = {"我们","都爱","java"};
+        String arr2[] = {"我们", "都爱", "java"};
         List list2 = Arrays.asList(arr2);
         StringBuilder operation = null;
         try {
@@ -51,9 +51,9 @@ public class SomeErrorTest{
             由于asList产生的集合并没有重写add,remove等方法，所以它会调用父类AbstractList的方法，而父类的方法中抛出的却是异常信息。
          */
 
-         //java8 数组转换集合
-         int[] intArr = { 1, 2, 3 };
-         List<Integer> list3 = Arrays.stream(intArr).boxed().collect(Collectors.toList());
-         System.out.println(list3.toString());
+        //java8 数组转换集合
+        int[] intArr = {1, 2, 3};
+        List<Integer> list3 = Arrays.stream(intArr).boxed().collect(Collectors.toList());
+        System.out.println(list3.toString());
     }
 }

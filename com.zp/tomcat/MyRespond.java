@@ -1,15 +1,15 @@
 import java.io.IOException;
 import java.io.OutputStream;
 
-public class MyRespond{
+public class MyRespond {
 
     private OutputStream outputStream;
-    
-    public MyRespond(OutputStream outputStream){
+
+    public MyRespond(OutputStream outputStream) {
         this.outputStream = outputStream;
     }
 
-    public void write(String content) throws IOException{
+    public void write(String content) throws IOException {
         StringBuffer httpRespond = new StringBuffer();
         httpRespond.append("HTTP/1.1 200 OK\n")
                 .append("Content-Type: text/html\n")

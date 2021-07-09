@@ -5,33 +5,33 @@ import java.net.Socket;
 import java.util.HashMap;
 import java.util.Map;
 
-public class MyTomcat{
+public class MyTomcat {
     private int port = 8080;
-    private Map<String,String> urlServlet = new HashMap<>();
+    private Map<String, String> urlServlet = new HashMap<>();
 
-    public MyTomcat(int port){
+    public MyTomcat(int port) {
         this.port = port;
     }
 
-    public void initServletMapping(){
-        for(ServletMapping servletMapping : ServletMappingConfig.servletMappingList){
+    public void initServletMapping() {
+        for (ServletMapping servletMapping : ServletMappingConfig.servletMappingList) {
             urlServlet.put(servletMapping.getUrl(), servletMapping.getClazz());
         }
     }
 
-    public void dispatch(MyRequest myRequest,MyRespond myRespond){
+    public void dispatch(MyRequest myRequest, MyRespond myRespond) {
         String clazz = urlServlet.get(myRequest.getUrl());
 
         try {
             Class myServletClass = Class.forName(clazz);
-            MyServlet myServlet = (MyServlet)myServletClass.newInstance();
+            MyServlet myServlet = (MyServlet) myServletClass.newInstance();
             myServlet.service(myRequest, myRespond);
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
-    public void run(){
+    public void run() {
 
         initServletMapping();
         ServerSocket serverSocket = null;
@@ -40,7 +40,7 @@ public class MyTomcat{
             serverSocket = new ServerSocket(port);
             System.out.println("My tomcat is running...");
 
-            while(true){
+            while (true) {
                 Socket socket = serverSocket.accept();
                 InputStream inputStream = socket.getInputStream();
                 OutputStream outputStream = socket.getOutputStream();
@@ -55,8 +55,8 @@ public class MyTomcat{
         } catch (Exception e) {
             //TODO: handle exception
             e.printStackTrace();
-        }finally{
-            if(serverSocket != null){
+        } finally {
+            if (serverSocket != null) {
                 try {
                     serverSocket.close();
                 } catch (Exception e) {

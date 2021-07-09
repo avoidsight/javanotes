@@ -21,13 +21,13 @@ public class MyTest {
 
             AutoWired autoWired = field.getAnnotation(AutoWired.class);
             // 字段上是否由@Autowired注解
-            if(autoWired == null){
+            if (autoWired == null) {
                 return;
             }
 
             try {
                 // field赋值，只为myService字段的类型的实例
-                field.set(controller,field.getType().newInstance());
+                field.set(controller, field.getType().newInstance());
             } catch (IllegalAccessException e) {
                 e.printStackTrace();
             } catch (InstantiationException e) {

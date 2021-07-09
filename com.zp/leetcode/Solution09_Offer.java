@@ -28,16 +28,16 @@ public class Solution09_Offer {
 
     public int deleteHead() {
         // 删除栈中是否有数
-        if(stack2.isEmpty()){
+        if (stack2.isEmpty()) {
             // 如果删除栈和当前栈都没数，返回-1
-            if(stack1.isEmpty()) return -1;
+            if (stack1.isEmpty()) return -1;
             // 删除栈为空，但是当前栈有值，直接把当前栈所有的值加到删除栈中
-            while(!stack1.isEmpty()){
+            while (!stack1.isEmpty()) {
                 stack2.add(stack1.pop());
             }
             //删除并返回删除栈的栈顶
             return stack2.pop();
-        }else{
+        } else {
             return stack2.pop();
         }
     }

@@ -23,19 +23,19 @@ class Solution139 {
         return dp[s.length()];
     }
 
-    public boolean searchChild(String s, int start, List<String> wordDict, int max, List<String> unMatch){
-        if(start==s.length()){
+    public boolean searchChild(String s, int start, List<String> wordDict, int max, List<String> unMatch) {
+        if (start == s.length()) {
             return true;
         }
-        if(s.length()-start+1 < max){
-            max = s.length()-start;
+        if (s.length() - start + 1 < max) {
+            max = s.length() - start;
         }
-        for(int i = start+max-1;i>=start;i--){
-            if(unMatch.contains(s.substring(start,i+1))) continue;
-            if(wordDict.contains(s.substring(start,i+1))){
-                wordDict.add(s.substring(0,i+1));
-                max = i+1;
-                if(searchChild(s,i+1,wordDict,max,unMatch)) {
+        for (int i = start + max - 1; i >= start; i--) {
+            if (unMatch.contains(s.substring(start, i + 1))) continue;
+            if (wordDict.contains(s.substring(start, i + 1))) {
+                wordDict.add(s.substring(0, i + 1));
+                max = i + 1;
+                if (searchChild(s, i + 1, wordDict, max, unMatch)) {
                     return true;
                 }
             }
@@ -43,7 +43,6 @@ class Solution139 {
         unMatch.add(s.substring(start));
         return false;
     }
-
 
 
     public static void main(String[] args) {
