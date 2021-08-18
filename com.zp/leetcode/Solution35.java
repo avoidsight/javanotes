@@ -1,4 +1,4 @@
-package com.zp.leetcode;
+package leetcode;
 
 /**
  * @author menmenz
