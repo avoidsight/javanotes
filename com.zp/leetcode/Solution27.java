@@ -1,4 +1,6 @@
-package com.zp.leetcode;
+package leetcode;
+
+import java.util.HashMap;
 
 /**
  * @author menmenz

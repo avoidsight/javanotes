@@ -1,4 +1,4 @@
-package com.zp.leetcode;
+package leetcode;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

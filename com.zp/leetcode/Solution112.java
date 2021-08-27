@@ -1,4 +1,6 @@
-package com.zp.leetcode;
+package leetcode;
+
+import com.zp.leetcode.external.TreeNode;
 
 /**
  * @author menmenz
