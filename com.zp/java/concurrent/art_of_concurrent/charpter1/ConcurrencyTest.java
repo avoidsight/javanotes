@@ -1,4 +1,4 @@
-package concurrent.art_of_concurrent.charpter1;
+package com.zp.java.concurrent.art_of_concurrent.charpter1;
 
 /**
  * 多线程一定快吗？
@@ -6,7 +6,7 @@ package concurrent.art_of_concurrent.charpter1;
  * 因为多线程要线程上下文切换以及死锁问题。ß
  */
 public class ConcurrencyTest {
-    private static final long count = 1000000000l;
+    private static final long count = 1000000000L;
 
     public static void main(String[] args) throws InterruptedException {
         concurrency();

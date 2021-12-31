@@ -1,5 +1,6 @@
 package com.zp.leetcode;
 
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -35,5 +36,8 @@ public class Solution211 {
             }
         }
         return false;
+    }
+
+    public static void main(String[] args) {
     }
 }
