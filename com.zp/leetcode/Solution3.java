@@ -20,6 +20,9 @@ public class Solution3 {
     }
 
     public static void main(String[] args) {
+        char c = 'c';
+        String s = "c";
+        System.out.println(s.equals(c+""));
         System.out.println(lengthOfLongestSubstring("abba"));
     }
 }
