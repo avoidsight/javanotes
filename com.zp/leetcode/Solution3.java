@@ -1,4 +1,4 @@
-package leetcode;
+package com.zp.leetcode;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -20,6 +20,14 @@ public class Solution3 {
     }
 
     public static void main(String[] args) {
+        String a = """
+                select 
+                    count(1)
+                from 
+                    dual;
+                """;
+        System.out.println(a);
+        System.out.println("System.getProperty(\"java.version\") = " + System.getProperty("java.version"));
         System.out.println(lengthOfLongestSubstring("abba"));
     }
 }

@@ -1,4 +1,4 @@
-package leetcode;
+package com.zp.leetcode;
 
 import com.zp.leetcode.external.TreeNode;
 
